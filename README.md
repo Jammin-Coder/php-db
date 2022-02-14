@@ -11,8 +11,9 @@ use Database\DB;
 
 DB::connect('/path/to/db/db_connection_file.php');
 
-```
+```  
 
+If you are directing all of your requests to a single PHP file, then you only need to call `DB::connect` once.  
 The `db_connection_file` should be in a directory that is NOT accessible to the web server, and it should contain these variables:    
 ```php
 <?php
